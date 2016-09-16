@@ -8,8 +8,8 @@ PR Maker is a bash script that will allow to easily do pull request on GitHub.
 
 Open pr.sh and replace the following values by your own values:
 
-`local_folder` : the local folder containing your git repos
-`github_username` : your GitHub username
+- `local_folder` : the local folder containing your git repos
+- `github_username` : your GitHub username
 
 # Usage
 
