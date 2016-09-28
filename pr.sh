@@ -118,7 +118,7 @@ while true; do
     read -p "Is the repo already linked to the upstream (needed the 1st time only) (Y/N)? " yn
     case $yn in
         [Yy]* ) line; echo "Excellent, let's continue!${normal}"; line; break;;
-        [Nn]* ) line; git remote add upstream git@github.com:woothemes/$repo_slug.git; git remote; line; echo "${green}${bold}Fork linked to the git@github.com:woothemes/$repo_slug.git upstream successfully.${normal}"; line; break;;
+        [Nn]* ) line; git remote add upstream git@github.com:woocommerce/$repo_slug.git; git remote; line; echo "${green}${bold}Fork linked to the git@github.com:woocommerce/$repo_slug.git upstream successfully.${normal}"; line; break;;
         * ) echo "Please answer Y or N.";;
     esac
 done
@@ -196,5 +196,5 @@ git push origin $new_branch
 echo "${bold}===== STEP 9: Everything went smoothly! =====${normal}"
 
 line
-echo "${green}${bold}Wow! You did an amazing job! Congrats! There's just a last step, please go to https://github.com/woothemes/$repo_slug, and simply hit the [Create Pull Request] button and you're done!${normal}"
+echo "${green}${bold}Wow! You did an amazing job! Congrats! There's just a last step, please go to https://github.com/woocommerce/$repo_slug, and simply hit the [Create Pull Request] button and you're done!${normal}"
 line
